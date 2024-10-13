@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".presentation.loginscreen.ui.SignInFragment">
+
+
+    <ImageView
+        android:id="@+id/imageViewlogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/icon" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/titlename"
+        android:text="@string/title_of_signscreen"
+        />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/subtitlename"
+        android:text="@string/subtitle_ofsigncreen"
+    />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/emailedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Email"
+        android:inputType="text"
+        app:startIconDrawable="@drawable/message"
+        style="@style/EditTextstyle"
+        app:endIconMode="clear_text"
+
+
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:background="@drawable/textfirld_shape"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+
+        style="@style/EditTextstyle"
+
+        app:startIconDrawable="@drawable/password" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password2"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfirld_shape"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/Signin_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Sign_in"
+        style="@style/buttonStyle"
+
+     />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp">
+
+        <!-- The View that serves as the background -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/gray" />
+
+        <!-- The TextView that will be placed on top of the View -->
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/or"
+            android:background="@color/white"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11ssp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/loginwithgoogle_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/google"
+
+        android:text="@string/login_with_google"
+        style="@style/authStyle"
+
+        />
+
+    <TextView
+        android:id="@+id/loginwithfacebook_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/facebook"
+        android:text="@string/login_with_facebook"
+        style="@style/authStyle"
+
+        />
+
+    <TextView
+        android:id="@+id/forgetpassword_button"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/forget_password"
+        style="@style/text_style"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="@string/don_t_have_a_account"
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/gray"
+            android:gravity="center"
+           />
+
+        <TextView
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+
+            android:text="@string/register"
+            style="@style/text_style"
+            android:gravity="center"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

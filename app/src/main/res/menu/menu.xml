@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Home"
+        android:title="@string/home"
+        android:enabled="true"
+
+        android:icon="@drawable/home"
+        />
+
+    <item
+        android:id="@+id/search"
+        android:title="@string/explore"
+        android:enabled="true"
+        android:icon="@drawable/search"
+        android:iconTint="@color/gray"
+        />
+
+    <item
+        android:id="@+id/cart"
+        android:title="@string/cart"
+        android:enabled="true"
+        android:icon="@drawable/cart"
+        />
+
+    <item
+        android:id="@+id/offer"
+        android:title="@string/offer"
+        android:enabled="true"
+        android:icon="@drawable/offer"
+        />
+
+    <item
+        android:id="@+id/account"
+        android:title="@string/account"
+        android:enabled="true"
+        android:icon="@drawable/account"
+        />
+
+</menu>
